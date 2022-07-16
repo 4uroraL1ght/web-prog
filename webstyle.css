@@ -1,0 +1,41 @@
+
+.container{
+    position: right;
+    width: 40%; 
+  background-color: rgb(129, 164, 206); 
+}
+.Skill_HTML{
+    width: 40%;
+    background-color: blueviolet;
+}
+
+body .gototop {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+.gototop {
+    --offset: 50px; 
+
+    position: sticky;
+    bottom: 20px;      
+    margin-right: 10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+  
+    /* visual styling */
+    width: 45px;
+    aspect-ratio: 1;
+    background: #ff8b24;
+    border-radius: 10px;
+}
+  
+  .gototop:before {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+  
